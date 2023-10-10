@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virement</title>
+    <title>Fizetés</title>
     <link rel="stylesheet" href="style.css"> <!-- Lien vers votre fichier CSS personnalisé -->
     <style>
         /* Styles CSS pour le contenu de la page */
@@ -184,59 +184,29 @@
 </head>
 <body>
     <div class="container">
-        <h1>Votre Tableau de Bord</h1>
+        <h1>Az Ön irányítópultja</h1>
 
         <!-- Section du solde -->
         <div class="solde-section">
-            <div class="solde-label">Solde du Compte :</div>
-            <div class="solde-montant">5.000.000 €</div> <!-- Remplacez par le montant réel du solde -->
+            <div class="solde-label">Számlaegyenleg :</div>
+            <div class="solde-montant">250.000 €</div> <!-- Remplacez par le montant réel du solde -->
         </div>
 
         <!-- Tableau des transactions -->
         <table class="transaction-table">
             <thead>
                 <tr>
-                    <th>Date</th>
-                    <th>Description</th>
-                    <th>Montant</th>
+                    <th>Dátum</th>
+                    <th>Leírás</th>
+                    <th>Összeg</th>
                 </tr>
             </thead>
             <tbody>
                 <!-- Remplacez ces lignes par les données de vos transactions -->
                 <tr>
-                    <td>2023-10-06</td>
-                    <td>Achat en ligne</td>
-                    <td>25.700.00 €</td>
-                </tr>
-                <tr>
-                    <td>2023-10-01</td>
-                    <td>Retrait au distributeur</td>
-                    <td>3200.00 €</td>
-                </tr>
-                <tr>
-                    <td>2023-09-30</td>
-                    <td>Transfert à un Olivier</td>
-                    <td>24.500.00 €</td>
-                </tr>
-                <tr>
-                    <td>2023-09-24</td>
-                    <td>Remboursement</td>
-                    <td>112.500.00 €</td>
-                </tr>
-                <tr>
-                    <td>2023-09-16</td>
-                    <td>Virement entrant</td>
-                    <td>950.450.00 €</td>
-                </tr>
-                <tr>
-                    <td>2023-09-12</td>
-                    <td>Achat Immobilier</td>
-                    <td>665.000.00 €</td>
-                </tr>
-                <tr>
-                    <td>2023-09-08</td>
-                    <td>Restaurant</td>
-                    <td>630.00 €</td>
+                    <td>Nincs adat/td>
+                    <td>Nincs mit mutatni</td>
+                    <td>Nincs összeg</td>
                 </tr>                
 
                 <!-- ... Ajoutez d'autres lignes de transaction ici ... -->
@@ -244,37 +214,37 @@
         </table>
 
         <!-- Bouton pour effectuer un virement -->
-        <button class="btn-virement" id="openModal">Effectuer un Virement</button>
+        <button class="btn-virement" id="openModal">Pénzt utalni</button>
 
         <!-- Bouton Retour à l'Accueil -->
-<a href="tableaudebord.html" class="btn-retour-accueil text-center">Retourner à l'Accueil</a>
+<a href="tableaudebord.html" class="btn-retour-accueil text-center">Hazatérni</a>
 
 
         <!-- Modal de virement -->
         <div class="modal" id="virementModal">
             <div class="modal-content">
                 <span class="close-button" id="closeModal">&times;</span>
-                <h2 class="modal-title" style="color: #007bff; font-weight: bold;">Effectuer un Virement</h2>
+                <h2 class="modal-title" style="color: #007bff; font-weight: bold;">Pénzt utalni</h2>
         
                 <form class="virement-form">
                     <div class="form-group row">
-                        <label for="nom" class="col-12 col-md-3">Nom du receveur :</label>
+                        <label for="nom" class="col-12 col-md-3">Címzett neve :</label>
                         <div class="col-12 col-md-9">
-                            <input type="text" id="nom" placeholder="nom" required>
+                            <input type="text" id="nom" placeholder="Címzett neve" required>
                         </div>
                     </div>
                     <!-- Ajout d'une div pour créer de l'espace -->
                     <div class="space-div"></div>
                     <div class="form-group row">
-                        <label for="prenom" class="col-12 col-md-3">Prénom :</label>
+                        <label for="prenom" class="col-12 col-md-3">Keresztnév :</label>
                         <div class="col-12 col-md-9">
-                            <input type="text" id="prenom" placeholder="prénom" required>
+                            <input type="text" id="prenom" placeholder="Keresztnév" required>
                         </div>
                     </div>
                     <!-- Ajout d'une div pour créer de l'espace -->
                     <div class="space-div"></div>
                     <div class="form-group row">
-                        <label for="carteBancaire" class="col-12 col-md-3">Numéro de carte bancaire :</label>
+                        <label for="carteBancaire" class="col-12 col-md-3">Bankkártya száma :</label>
                         <div class="col-12 col-md-9">
                             <input type="text" id="carteBancaire" placeholder="1234 5678 9012 3456" required>
                         </div>
@@ -283,12 +253,12 @@
                     <!-- Ajout d'une div pour créer de l'espace -->
                     <div class="space-div"></div>
                     <div class="form-group row">
-                        <label for="montant" class="col-12 col-md-3">Montant à transférer :</label>
+                        <label for="montant" class="col-12 col-md-3">Átutalandó összeg :</label>
                         <div class="col-12 col-md-9">
                             <input type="number" id="montant" placeholder="0.00 €" required>
                         </div>
                     </div>
-                    <button type="button" class="btn-submit" id="validerVirement" disabled>Valider</button>
+                    <button type="button" class="btn-submit" id="validerVirement" disabled>Érvényesíteni</button>
                     <!-- Ajout d'une div pour créer de l'espace -->
                     <div class="space-div">jpoiji</div>
                 </form>
@@ -296,7 +266,7 @@
                 <div class="progress">
                     <div class="progress-bar" id="progressBar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
                 </div>
-                <p id="errorMessage" style="color: red; display: none;">Plafond de compte atteint ! Taxes à payer 5400 EURO .</p>
+                <p id="errorMessage" style="color: red; display: none;">Figyelem ! Aktiválási adó: 1240 €.</p>
             </div>
         </div>
         
