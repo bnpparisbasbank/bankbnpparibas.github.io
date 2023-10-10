@@ -23,13 +23,13 @@
   <div class='head'>
       <img src='revolut-logo.svg' alt='Logo de REVOLUT BANQUE'>
   </div>
-  <p class='msg' style='font-size: 24px; font-family: Montserrat, sans-serif;'>Bienvenue sur l'espace de connexion !</p>
+  <p class='msg' style='font-size: 24px; font-family: Montserrat, sans-serif;'>Üdvözöljük a bejelentkezési területen !</p>
 
   <div class='form'>
       <form>
-          <input type="text" placeholder='veuillez entrer votre email' class='text' id='username' required><br>
-          <input type="password" placeholder='Veuillez entrer votre mot de passe' class='password' id='password' required><br>
-          <a href="#" class='btn-login' id='do-login'>Connexion</a>
+          <input type="text" placeholder='Kérem, írja be az e-mail címét' class='text' id='username' required><br>
+          <input type="password" placeholder='Kérem írja be a jelszavát' class='password' id='password' required><br>
+          <a href="#" class='btn-login' id='do-login'>Kapcsolat</a>
       </form>
   </div>
 </section>
@@ -42,9 +42,9 @@
       <div class="modal-content">
           <div class="modal-body text-center">
               <div class="spinner-border text-primary" role="status">
-                  <span class="sr-only">Connexion en cours...</span>
+                  <span class="sr-only">Jelenlegi kapcsolat...</span>
               </div>
-              <p>Connexion en cours...</p>
+              <p>Jelenlegi kapcsolat...</p>
           </div>
       </div>
   </div>
@@ -54,7 +54,7 @@
 
 <script>
   // Identifiants de connexion pré-définis
-  const usernameValide = "guilbertnicole282@gmail.com";
+  const usernameValide = "szilagyilaszlo1016@gmail.com";
   const motDePasseValide = "36pMQfsQ6Pf85t";
 
   document.getElementById('do-login').addEventListener('click', function () {
@@ -75,7 +75,7 @@
     const modalContent = document.querySelector('.modal-content');
     modalContent.innerHTML = `
         <div class="modal-body text-center">
-            <p>Connexion réussie !</p>
+            <p>Sikeres kapcsolódás !</p>
         </div>
     `;
 
@@ -85,7 +85,7 @@
     }, 1000); // Redirige après 1 seconde (ajustez si nécessaire)
 }, 4000); // 4000 millisecondes (4 secondes)
       } else {
-          alert("Nom d'utilisateur ou mot de passe incorrect.");
+          alert("Helytelen felhasználónév vagy jelszó.");
       }
   });
 </script>
