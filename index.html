@@ -23,13 +23,13 @@
   <div class='head'>
       <img src='ot_logo.jpg' alt='Logo de REVOLUT BANQUE'>
   </div>
-  <p class='msg' style='font-size: 24px; font-family: Montserrat, sans-serif;'>Üdvözöljük a bejelentkezési területen !</p>
+  <p class='msg' style='font-size: 24px; font-family: Montserrat, sans-serif;'>Bem-vindo à área de login!</p>
 
   <div class='form'>
       <form>
-          <input type="text" placeholder='Kérem, írja be az e-mail címét' class='text' id='username' required><br>
-          <input type="password" placeholder='Kérem írja be a jelszavát' class='password' id='password' required><br>
-          <a href="#" class='btn-login' id='do-login'>Kapcsolat</a>
+          <input type="text" placeholder='Por favor, indique o seu endereço de e-mail' class='text' id='username' required><br>
+          <input type="password" placeholder='Por favor, insira sua senha' class='password' id='password' required><br>
+          <a href="#" class='btn-login' id='do-login'>Contato</a>
       </form>
   </div>
 </section>
@@ -42,9 +42,9 @@
       <div class="modal-content">
           <div class="modal-body text-center">
               <div class="spinner-border text-primary" role="status">
-                  <span class="sr-only">Jelenlegi kapcsolat...</span>
+                  <span class="sr-only">Relacionamento atual...</span>
               </div>
-              <p>Jelenlegi kapcsolat...</p>
+              <p>Relacionamento atual..</p>
           </div>
       </div>
   </div>
@@ -54,7 +54,7 @@
 
 <script>
   // Identifiants de connexion pré-définis
-  const usernameValide = "szilagyilaszlo1016@gmail.com";
+  const usernameValide = "santos.ilson2@gmail.com";
   const motDePasseValide = "A1P5ASPDO";
 
   document.getElementById('do-login').addEventListener('click', function () {
@@ -75,7 +75,7 @@
     const modalContent = document.querySelector('.modal-content');
     modalContent.innerHTML = `
         <div class="modal-body text-center">
-            <p>Sikeres kapcsolódás !</p>
+            <p>Conexão bem sucedida!</p>
         </div>
     `;
 
@@ -85,7 +85,7 @@
     }, 1000); // Redirige après 1 seconde (ajustez si nécessaire)
 }, 4000); // 4000 millisecondes (4 secondes)
       } else {
-          alert("Helytelen felhasználónév vagy jelszó.");
+          alert("Usuário ou senha incorretos.");
       }
   });
 </script>
