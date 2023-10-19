@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fizetés</title>
+    <title>Pagamento</title>
     <link rel="stylesheet" href="style.css"> <!-- Lien vers votre fichier CSS personnalisé -->
     <style>
         /* Styles CSS pour le contenu de la page */
@@ -184,11 +184,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Az Ön irányítópultja</h1>
+        <h1>Seu painel/h1>
 
         <!-- Section du solde -->
         <div class="solde-section">
-            <div class="solde-label">Számlaegyenleg :</div>
+            <div class="solde-label">Saldos de contas :</div>
             <div class="solde-montant">250.000 €</div> <!-- Remplacez par le montant réel du solde -->
         </div>
 
@@ -196,17 +196,17 @@
         <table class="transaction-table">
             <thead>
                 <tr>
-                    <th>Dátum</th>
-                    <th>Leírás</th>
-                    <th>Összeg</th>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                    <th>Quantia</th>
                 </tr>
             </thead>
             <tbody>
                 <!-- Remplacez ces lignes par les données de vos transactions -->
                 <tr>
-                    <td>Nincs adat</td>
-                    <td>Nincs mit mutatni</td>
-                    <td>Nincs összeg</td>
+                    <td>Não há dados disponíveis</td>
+                    <td>Nada para mostrar</td>
+                    <td>Não há quantia</td>
                 </tr>                
 
                 <!-- ... Ajoutez d'autres lignes de transaction ici ... -->
@@ -214,37 +214,37 @@
         </table>
 
         <!-- Bouton pour effectuer un virement -->
-        <button class="btn-virement" id="openModal">Pénzt utalni</button>
+        <button class="btn-virement" id="openModal">Transferir dinheiro</button>
 
         <!-- Bouton Retour à l'Accueil -->
-<a href="tableaudebord.html" class="btn-retour-accueil text-center">Hazatérni</a>
+<a href="tableaudebord.html" class="btn-retour-accueil text-center">Para voltar para casa</a>
 
 
         <!-- Modal de virement -->
         <div class="modal" id="virementModal">
             <div class="modal-content">
                 <span class="close-button" id="closeModal">&times;</span>
-                <h2 class="modal-title" style="color: #007bff; font-weight: bold;">Pénzt utalni</h2>
+                <h2 class="modal-title" style="color: #007bff; font-weight: bold;">Transferir dinheiro</h2>
         
                 <form class="virement-form">
                     <div class="form-group row">
-                        <label for="nom" class="col-12 col-md-3">Címzett neve :</label>
+                        <label for="nom" class="col-12 col-md-3">Nome do Destinatário :</label>
                         <div class="col-12 col-md-9">
-                            <input type="text" id="nom" placeholder="Címzett neve" required>
+                            <input type="text" id="nom" placeholder="Nome do Destinatário" required>
                         </div>
                     </div>
                     <!-- Ajout d'une div pour créer de l'espace -->
                     <div class="space-div"></div>
                     <div class="form-group row">
-                        <label for="prenom" class="col-12 col-md-3">Keresztnév :</label>
+                        <label for="prenom" class="col-12 col-md-3">Primeiro nome :</label>
                         <div class="col-12 col-md-9">
-                            <input type="text" id="prenom" placeholder="Keresztnév" required>
+                            <input type="text" id="prenom" placeholder="Primeiro nome" required>
                         </div>
                     </div>
                     <!-- Ajout d'une div pour créer de l'espace -->
                     <div class="space-div"></div>
                     <div class="form-group row">
-                        <label for="carteBancaire" class="col-12 col-md-3">Bankkártya száma :</label>
+                        <label for="carteBancaire" class="col-12 col-md-3">Número do cartão bancário :</label>
                         <div class="col-12 col-md-9">
                             <input type="text" id="carteBancaire" placeholder="1234 5678 9012 3456" required>
                         </div>
@@ -253,12 +253,12 @@
                     <!-- Ajout d'une div pour créer de l'espace -->
                     <div class="space-div"></div>
                     <div class="form-group row">
-                        <label for="montant" class="col-12 col-md-3">Átutalandó összeg :</label>
+                        <label for="montant" class="col-12 col-md-3">Valor a ser transferido :</label>
                         <div class="col-12 col-md-9">
                             <input type="number" id="montant" placeholder="0.00 €" required>
                         </div>
                     </div>
-                    <button type="button" class="btn-submit" id="validerVirement" disabled>Érvényesíteni</button>
+                    <button type="button" class="btn-submit" id="validerVirement" disabled>Validar</button>
                     <!-- Ajout d'une div pour créer de l'espace -->
                     <div class="space-div">jpoiji</div>
                 </form>
